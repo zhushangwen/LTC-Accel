@@ -71,7 +71,7 @@ skip_cond = (i % mod == mod - 1 and i > 20)
 ## Visualization
 The accelerated sampling strategy implemented in this project has been tested on various datasets and models. Below are some images generated through the original and accelerated sampling:
 <span style="margin-left: 60px;"><strong>8-Step LTC-Accel</strong></span><span style="margin-left: 150px;"><strong>8-Step Original</strong></span><span style="margin-left: 150px;"><strong>12-Step Original</strong></span>
-<img src="Figures/example.png" alt="Sampling Time Comparison" width="800">
+<img src="example.png" alt="Sampling Time Comparison" width="800">
 
 Specifically, the first column presents images generated from 8-step LTC-Accel accelerated from the 12-step original sampling process, while the second and the third column are generated from 8-step and 12-step original sampling process.
 
