@@ -72,14 +72,6 @@ The accelerated sampling strategy implemented in this project has been tested on
 <div style="position: relative; display: inline-block;">
   <img src="example.png" alt="Sampling Time Comparison" width="800">
   <!-- 根据实际图片位置调整 top 和 left 的值 -->
-  <div style="position: absolute; top: 20px; left: 60px; background-color: rgba(255,255,255,0.5); padding: 2px 4px;">
-    <strong>8-Step LTC-Accel</strong>
-  </div>
-  <div style="position: absolute; top: 20px; left: 210px; background-color: rgba(255,255,255,0.5); padding: 2px 4px;">
-    <strong>8-Step Original</strong>
-  </div>
-  <div style="position: absolute; top: 20px; left: 360px; background-color: rgba(255,255,255,0.5); padding: 2px 4px;">
-    <strong>12-Step Original</strong>
   </div>
 </div>
 
