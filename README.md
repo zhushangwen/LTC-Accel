@@ -69,8 +69,19 @@ skip_cond = (i % mod == mod - 1 and i > 20)
 
 ## Visualization
 The accelerated sampling strategy implemented in this project has been tested on various datasets and models. Below are some images generated through the original and accelerated sampling:
-<span style="margin-left: 60px;"><strong>8-Step LTC-Accel</strong></span><span style="margin-left: 150px;"><strong>8-Step Original</strong></span><span style="margin-left: 150px;"><strong>12-Step Original</strong></span>
-<img src="example.png" alt="Sampling Time Comparison" width="800">
+<div style="position: relative; display: inline-block;">
+  <img src="example.png" alt="Sampling Time Comparison" width="800">
+  <!-- 根据实际图片位置调整 top 和 left 的值 -->
+  <div style="position: absolute; top: 20px; left: 60px; background-color: rgba(255,255,255,0.5); padding: 2px 4px;">
+    <strong>8-Step LTC-Accel</strong>
+  </div>
+  <div style="position: absolute; top: 20px; left: 210px; background-color: rgba(255,255,255,0.5); padding: 2px 4px;">
+    <strong>8-Step Original</strong>
+  </div>
+  <div style="position: absolute; top: 20px; left: 360px; background-color: rgba(255,255,255,0.5); padding: 2px 4px;">
+    <strong>12-Step Original</strong>
+  </div>
+</div>
 
 Specifically, the first column presents images generated from 8-step LTC-Accel accelerated from the 12-step original sampling process, while the second and the third column are generated from 8-step and 12-step original sampling process.
 
