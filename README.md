@@ -1,6 +1,6 @@
 # Accelerating Diffusion Sampling via Exploiting Local Transition Coherence
 
-This project aims to introduce a training-free method, LTC-Accel, which accelerates the sampling process of diffusion models by identifying **Local Transition Coherence** and implementing corresponding acceleration strategies. Here we just present an example on EDM based on Stable Diffusion v3.5, and you can feel free to change the base model and scheduler since LTC-Accel is training-free and widely compatiable. The project includes two main components: the original model and scheduler (`ddimx.py`) and the accelerated sampling strategy (`step.py`).
+This project aims to introduce a training-free method, LTC-Accel, which accelerates the sampling process of diffusion models by identifying **Local Transition Coherence** and implementing corresponding acceleration strategies. Here we just present an example on EDM based on Stable Diffusion v3.5, and you can feel free to change the base model and scheduler since LTC-Accel is training-free and widely compatiable. The project includes two main components: the original model and scheduler (`main.py`) and the accelerated sampling strategy (`step.py`).
 
 ## Table of Contents
 
@@ -29,8 +29,7 @@ To use this project, clone the repository and install the required dependencies.
 
 ```bash
 git clone https://github.com/zhushangwen/LTC-Accel.git
-cd TODO
-pip install -r requirements.txt
+cd ./LTC-Accel
 ```
 
 ## Usage
@@ -38,28 +37,28 @@ pip install -r requirements.txt
 To run the original diffusion model and scheduler, use the `ddimx.py` script and set parameters as the followings:
 
 ```python
-images = pipe(prompt, device=device, num_inference_steps = inference_steps, batch_size = 1, cal_wg = False, skip_x = False, index = idx, plot_angle = True).images
+images = pipe(prompt, device=device, num_inference_steps = inference_steps, cal_wg = False, skip_x = False).images
 ```
 
 You can feel free to change the parameters as long as `skip_x = False`. Then you can run the original model:
 ```bash
-python ddimx.py
+python main.py
 ```
 
 ### Running the Accelerated Sampling
 To run the accelerated sampling process, first it is necessary to obtain one important parameter $w_g$ used for measuring the **Local Transition Coherence** and approximating some sampling steps. Specifically, set `cal_wg = True` and `skip_x = False` as the following example:
 
 ```python
-images = pipe(prompt, device=device, num_inference_steps = inference_steps, batch_size = 1, cal_wg = True, skip_x = False, index = idx, plot_angle = False).images
+images = pipe(prompt, device=device, num_inference_steps = inference_steps, cal_wg = True, skip_x = False).images
 ```
 
 Then, use the $w_g$ to run the accelerated sampling of the original sampling process:
 
 ```python
-images = pipe(prompt, device=device, num_inference_steps = inference_steps, batch_size = 1, cal_wg = False, skip_x = True, index = idx, plot_angle = False).images
+images = pipe(prompt, device=device, num_inference_steps = inference_steps, cal_wg = False, skip_x = True).images
 ```
 ```bash
-python ddimx.py
+python main.py
 ```
 
 You can feel free to modify the parameters concerning the acceleration condition in `step.py` as you want. The following is one example for `mod` and `skip_cond`:
