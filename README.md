@@ -20,7 +20,7 @@ Diffusion models have shown remarkable performance in text-based generation, but
 
 The project consists of two main files:
 
-- `ddimx.py`: Implements the original diffusion model and scheduler.
+- `main.py`: Implements the original diffusion model and scheduler.
 - `step.py`: Implements the accelerated sampling strategy.
 
 ## Installation
@@ -34,7 +34,7 @@ cd ./LTC-Accel
 
 ## Usage
 ### Running the Original Model
-To run the original diffusion model and scheduler, use the `ddimx.py` script and set parameters as the followings:
+To run the original diffusion model and scheduler, set parameters as the followings:
 
 ```python
 images = pipe(prompt, device=device, num_inference_steps = inference_steps, cal_wg = False, skip_x = False).images
