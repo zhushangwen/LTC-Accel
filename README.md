@@ -82,14 +82,6 @@ We sincerely thank the authors listed below who implemented LTC-Accel in plugins
 
 - Diffusers: https://huggingface.co/docs/diffusers
 
-## Contributing
-We welcome contributions to this project! If you have any ideas, suggestions, or improvements, please feel free to open an issue or submit a pull request.
 
-- Fork the repository.
-- Create a new branch (`git checkout -b feature/YourFeatureName`).
-- Commit your changes (`git commit -m 'Add some feature'`).
-- Push to the branch (`git push origin feature/YourFeatureName`).
-- Open a pull request.
 
-## License
-This project is licensed under the TODO - see the LICENSE file for details.
+
