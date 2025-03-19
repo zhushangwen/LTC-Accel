@@ -1,8 +1,9 @@
 # Accelerating Diffusion Sampling via Exploiting Local Transition Coherence
 
-<a href="https://arxiv.org/pdf/2503.09675.pdf" style="display: inline-block; padding: 10px 20px; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 5px; text-decoration: none; color: #333; font-family: Arial, sans-serif; font-size: 14px;">
-    <strong>arXiv</strong>: 2503.09675
-</a>
+<div align="center">
+      
+[![arXiv](https://img.shields.io/badge/arXiv-2503.09675-b31b1b.svg)](https://arxiv.org/abs/2503.09675)
+</div>
 
 This project aims to introduce a training-free method, LTC-Accel, which accelerates the sampling process of diffusion models by identifying **Local Transition Coherence** and implementing corresponding acceleration strategies. Here we just present an example on EDM based on Stable Diffusion v3.5, and you can feel free to change the base model and scheduler since LTC-Accel is training-free and widely compatiable. The project includes two main components: the original model and scheduler (`main.py`) and the accelerated sampling strategy (`step.py`).
 
