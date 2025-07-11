@@ -13,6 +13,7 @@ This project aims to introduce a training-free method, LTC-Accel, which accelera
 
 ## Table of Contents
 
+- [Quickstart](#quickstart)
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,6 +23,10 @@ This project aims to introduce a training-free method, LTC-Accel, which accelera
 - [Other Implementations and Plugins](#other-implementations-and-plugins)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Quickstart
+
+Before we dive into the details, we invite you to try our [Quickstart Colab Demo](https://colab.research.google.com/drive/1h0SM3dp7oUzjBdahmwEcJn9RCq2gryD1) to experience LTC's performance firsthand. Like what you see? A star would mean a lot to us!
 
 ## Introduction
 
