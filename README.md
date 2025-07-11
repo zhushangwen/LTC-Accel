@@ -1,12 +1,7 @@
 # Accelerating Diffusion Sampling via Exploiting Local Transition Coherence
 
 <div align="center">
-      
-[![arXiv](https://img.shields.io/badge/arXiv-2503.09675-b31b1b.svg)](https://arxiv.org/abs/2503.09675)
-</div>
-
-<div align="center">
-      
+[![arXiv](https://img.shields.io/badge/arXiv-2503.09675-b31b1b.svg)](https://arxiv.org/abs/2503.09675) 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1h0SM3dp7oUzjBdahmwEcJn9RCq2gryD1)
 </div>
 
