@@ -978,8 +978,7 @@ class StableDiffusion3Pipeline(DiffusionPipeline, SD3LoraLoaderMixin, FromSingle
                     min_diff = min(diff_norms)
                     optimal_w_g = w_g_values[diff_norms.index(min_diff)]
                     wg_buffer.append(optimal_w_g)
-                    print(optimal_w_g)
-                    print(min_diff)
+                    print(f"Optimal wg: {optimal_w_g}.")
                     latents = buffer[i - 1] + (optimal_w_g) * gamma * (buffer[i - 1] - buffer[i - 2])
                 buffer.append(latents)
                 stats_pass_count += 1
