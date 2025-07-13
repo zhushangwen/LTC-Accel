@@ -1,4 +1,4 @@
-from diffusers import DPMSolverMultistepScheduler,  EulerDiscreteScheduler
+from diffusers import EulerDiscreteScheduler
 import torch
 from step import StableDiffusion3Pipeline  
 import pandas as pd
@@ -7,10 +7,10 @@ torch.cuda.empty_cache()
 def run_inference(device, model_id, inference_steps):
     torch.cuda.empty_cache()
     prompt = "A pretty girl with anime style"
-    scheduler = DPMSolverMultistepScheduler.from_pretrained(model_id, subfolder="scheduler",algorithm_type = "dpmsolver++",solver_order = 2)
+    scheduler = EulerDiscreteScheduler.from_pretrained(model_id, subfolder="scheduler")
     pipe = StableDiffusion3Pipeline.from_pretrained(
         model_id,
-        torch_dtype=torch.float16, 
+        torch_dtype=torch.bfloat16, 
     )
     pipe = pipe.to(device)
     pipe.scheduler = scheduler
