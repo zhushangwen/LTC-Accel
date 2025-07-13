@@ -1,4 +1,4 @@
-from diffusers import EulerDiscreteScheduler
+from diffusers import FlowMatchEulerDiscreteScheduler
 import torch
 from step import StableDiffusion3Pipeline  
 import pandas as pd
@@ -7,7 +7,7 @@ torch.cuda.empty_cache()
 def run_inference(device, model_id, inference_steps):
     torch.cuda.empty_cache()
     prompt = "A pretty girl with anime style"
-    scheduler = EulerDiscreteScheduler.from_pretrained(model_id, subfolder="scheduler")
+    scheduler = FlowMatchEulerDiscreteScheduler.from_pretrained(model_id, subfolder="scheduler")
     pipe = StableDiffusion3Pipeline.from_pretrained(
         model_id,
         torch_dtype=torch.bfloat16, 
