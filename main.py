@@ -29,7 +29,7 @@ def run_inference(device, model_id, inference_steps):
 
 if __name__ == "__main__":
     #sd35
-    model_id = "sd35/"
+    model_id = "stabilityai/stable-diffusion-3.5-large"
     
     run_inference(device="cuda", model_id=model_id, inference_steps=40)
 
