@@ -29,7 +29,7 @@
 * **March 10, 2025**: 🚀 Initial release of **LTC-Accel** with Stable Diffusion v3.5 support!
 
 ### Introduction
-**LTC-Accel** is a **training-free acceleration framework** that enhances sampling efficiency in diffusion models by identifying and leveraging **Local Transition Coherence (LTC)**. Our approach is model-agnostic and compatible with almost all the pipelines, achieving a maximum **10x** speedup when combined with distillation models.
+**LTC-Accel** is a **training-free acceleration framework** that enhances sampling efficiency in diffusion models by identifying and leveraging **Local Transition Coherence (LTC)**. Designed as model-agnostic solution, it integrates seamlessly with diverse pipelines while achieving up to **10× speedup** when combined with distillation techniques.
 
 ### Table of Contents
 
