@@ -9,7 +9,7 @@
   </a>
 </p>
 
-This project aims to introduce a training-free method, LTC-Accel, which accelerates the sampling process of diffusion models by identifying **Local Transition Coherence** and implementing corresponding acceleration strategies. Here we just present an example on EDM based on Stable Diffusion v3.5, and you can feel free to change the base model and scheduler since LTC-Accel is training-free and widely compatiable. The project includes two main components: the original model and scheduler (`main.py`) and the accelerated sampling strategy (`step.py`).
+**LTC-Accel** is a **training-free acceleration framework** that enhances sampling efficiency in diffusion models by identifying and leveraging **Local Transition Coherence (LTC)**. This repository provides a reference implementation using EDM scheduler with Stable Diffusion v3.5, but the method is model-agnostic and compatible with various diffusion architectures.
 
 ## Table of Contents
 
