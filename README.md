@@ -9,13 +9,14 @@
   </a>
 </p>
 
-<div style="position: relative; display: inline-block;", align="center">
+<div align="center">
   <img src="example.png" alt="Sampling Time Comparison" width="800">
+  <br>
   <em>
       (Results on Stable Diffusion v3.5. Left: 8-step LTC-Accel accelerated from 12-step original. Middle: 8-step original. Right: 12-step original.) 
   </em>
-  </div>
 </div>
+<br>
 
 ### Why LTC-Accel  
 - 🚀 **Instant speed‑ups, zero retraining**: Achieve significant sampling acceleration without touching your model weights
