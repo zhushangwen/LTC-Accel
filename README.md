@@ -9,14 +9,22 @@
   </a>
 </p>
 
-## Why LTC-Accel  
+<div style="position: relative; display: inline-block;">
+  <img src="example.png" alt="Sampling Time Comparison" width="800">
+  <em>
+      (Results on Stable Diffusion v3.5. Left: 8-step LTC-Accel accelerated from 12-step original sampling. Middle: 8-step original generation. Right: 12-step original generation.) 
+  </em>
+  </div>
+</div>
+
+### Why LTC-Accel  
 - 🚀 **Instant speed‑ups, zero retraining**: Achieve significant sampling acceleration without touching your model weights
 - 🔄 **Architecturally agnostic**: Seamlessly supports any base model and scheduler combination
 - ⚡ **True plug‑and‑play**: Drop it into your existing pipeline—no code rewrites, just faster results
 
 **LTC-Accel** is a **training-free acceleration framework** that enhances sampling efficiency in diffusion models by identifying and leveraging **Local Transition Coherence (LTC)**. This repository provides a reference implementation using EDM scheduler with Stable Diffusion v3.5, but the method is model-agnostic and compatible with various diffusion architectures.
 
-## Table of Contents
+### Table of Contents
 
 - [Quickstart](#quickstart)
 - [Introduction](#introduction)
@@ -29,11 +37,11 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-## Quickstart
+### Quickstart
 
 Before we dive into the details, we invite you to try our [Quickstart Colab Demo](https://colab.research.google.com/drive/1h0SM3dp7oUzjBdahmwEcJn9RCq2gryD1) to experience LTC-Accel's performance firsthand. Like what you see? A star would mean a lot to us!
 
-## Introduction
+### Introduction
 
 Diffusion models have shown remarkable performance in text-based generation, but their sampling process can be computationally intensive. This project explores the phenomenon of **Local Transition Coherence** in the sampling process and implements strategies to accelerate the sampling process without compromising the quality of the generated samples.
 
@@ -42,7 +50,7 @@ The project consists of two main files:
 - `main.py`: Implements the original diffusion model and scheduler.
 - `step.py`: Implements the accelerated sampling strategy.
 
-## Installation
+### Installation
 
 To use this project, clone the repository and install the required dependencies.
 
@@ -51,8 +59,8 @@ git clone https://github.com/zhushangwen/LTC-Accel.git
 cd ./LTC-Accel
 ```
 
-## Usage
-### Running the Original Model
+### Usage
+#### Running the Original Model
 To run the original diffusion model and scheduler, set parameters as the followings:
 
 ```python
@@ -64,7 +72,7 @@ You can feel free to change the parameters as long as `skip_x = False`. Then you
 python main.py
 ```
 
-### Running the Accelerated Sampling
+#### Running the Accelerated Sampling
 To run the accelerated sampling process, first it is necessary to obtain one important parameter $w_g$ used for measuring the **Local Transition Coherence** and approximating some sampling steps. Specifically, set `cal_wg = True` and `skip_x = False` as the following example:
 
 ```python
@@ -86,7 +94,7 @@ mod = 2
 skip_cond = (i % mod == mod - 1 and i > 20)
 ```
 
-## Visualization
+### Visualization
 The accelerated sampling strategy implemented in this project has been tested on various datasets and models. Below are some images generated through the original and accelerated sampling:
 <div style="position: relative; display: inline-block;">
   <img src="example.png" alt="Sampling Time Comparison" width="800">
@@ -96,7 +104,7 @@ The accelerated sampling strategy implemented in this project has been tested on
 
 Specifically, the first column presents images generated from 8-step LTC-Accel accelerated from the 12-step original sampling process, while the second and the third column are generated from 8-step and 12-step original sampling process.
 
-## Other Implementations and Plugins
+### Other Implementations and Plugins
 We sincerely thank the authors listed below who implemented LTC-Accel in plugins or other contexts.
 
 - Diffusers: https://huggingface.co/docs/diffusers
