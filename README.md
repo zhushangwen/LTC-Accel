@@ -24,9 +24,9 @@
 * ⚡ **True plug‑and‑play**: Drop it into your existing pipeline—no code rewrites, just faster results
 
 ### Updates
-* 🧪**July 10, 2025**: Interactive [Colab demo](https://colab.research.google.com/drive/1h0SM3dp7oUzjBdahmwEcJn9RCq2gryD1) — try **LTC‑Accel** live in your browser!
-* 🎉**June 26, 2025**: Paper accepted to **ICCV 2025**!
-* 🚀**March 10, 2025**: Open‑sourced **LTC‑Accel** code for **Stable Diffusion v3.5**.
+* **July 10, 2025**: 🧪 [Interactive Colab Demo](https://colab.research.google.com/drive/1h0SM3dp7oUzjBdahmwEcJn9RCq2gryD1) released - experience LTC-Accel in real-time directly from your browser!
+* **June 26, 2025**: 🎉 Our paper accepted to **ICCV 2025**!
+* **March 10, 2025**: 🚀 Initial release of **LTC-Accel** with Stable Diffusion v3.5 support!
 
 ### Introduction
 **LTC-Accel** is a **training-free acceleration framework** that enhances sampling efficiency in diffusion models by identifying and leveraging **Local Transition Coherence (LTC)**. Our approach is model-agnostic and compatible with almost all the pipelines, achieving a maximum **10x** speedup when combined with distillation models.
