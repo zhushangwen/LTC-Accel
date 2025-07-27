@@ -28,6 +28,9 @@
 * 🎉**June 26, 2025**: Paper accepted to **ICCV 2025**!
 * 🚀**March 10, 2025**: Open‑sourced **LTC‑Accel** code for **Stable Diffusion v3.5**.
 
+### Introduction
+**LTC-Accel** is a **training-free acceleration framework** that enhances sampling efficiency in diffusion models by identifying and leveraging **Local Transition Coherence (LTC)**. Our approach is model-agnostic and compatible with almost all the pipelines, achieving a maximum **10x** speedup when combined with distillation models.
+
 ### Table of Contents
 
 - [Quickstart](#quickstart)
