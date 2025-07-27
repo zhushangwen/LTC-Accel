@@ -13,17 +13,20 @@
   <img src="example.png" alt="Sampling Time Comparison" width="800">
   <br>
   <em>
-      (Results on Stable Diffusion v3.5. Left: 8-step LTC-Accel accelerated from 12-step original. Middle: 8-step original. Right: 12-step original.) 
+      (Results on Stable Diffusion v3.5. **Left**: 8-step LTC-Accel accelerated from 12-step original. **Middle**: 8-step original. **Right**: 12-step original.) 
   </em>
 </div>
 <br>
 
 ### Why LTC-Accel  
-- 🚀 **Instant speed‑ups, zero retraining**: Achieve significant sampling acceleration without touching your model weights
-- 🔄 **Architecturally agnostic**: Seamlessly supports any base model and scheduler combination
-- ⚡ **True plug‑and‑play**: Drop it into your existing pipeline—no code rewrites, just faster results
+* 🚀 **Instant speed‑ups, zero retraining**: Achieve significant sampling acceleration without touching your model weights
+* 🔄 **Architecturally agnostic**: Seamlessly supports any base model and scheduler combination
+* ⚡ **True plug‑and‑play**: Drop it into your existing pipeline—no code rewrites, just faster results
 
-**LTC-Accel** is a **training-free acceleration framework** that enhances sampling efficiency in diffusion models by identifying and leveraging **Local Transition Coherence (LTC)**. This repository provides a reference implementation using EDM scheduler with Stable Diffusion v3.5, but the method is model-agnostic and compatible with various diffusion architectures.
+### Updates
+* **July 10, 2025**: 🧪Interactive [Colab demo](https://colab.research.google.com/drive/1h0SM3dp7oUzjBdahmwEcJn9RCq2gryD1) — try **LTC‑Accel** live in your browser!
+* **June 26, 2025**: 🎉Paper accepted to **ICCV 2025**!
+* **March 10, 2025**: 🚀Open‑sourced **LTC‑Accel** code for **Stable Diffusion v3.5**.
 
 ### Table of Contents
 
