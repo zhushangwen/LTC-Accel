@@ -9,6 +9,11 @@
   </a>
 </p>
 
+## Why LTC-Accel  
+- 🚀 **Instant speed‑ups, zero retraining**: Achieve significant sampling acceleration without touching your model weights
+- 🔄 **Architecturally agnostic**: Seamlessly supports any base model and scheduler combination
+- ⚡ **True plug‑and‑play**: Drop it into your existing pipeline—no code rewrites, just faster results
+
 **LTC-Accel** is a **training-free acceleration framework** that enhances sampling efficiency in diffusion models by identifying and leveraging **Local Transition Coherence (LTC)**. This repository provides a reference implementation using EDM scheduler with Stable Diffusion v3.5, but the method is model-agnostic and compatible with various diffusion architectures.
 
 ## Table of Contents
