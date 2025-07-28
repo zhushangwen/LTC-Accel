@@ -108,9 +108,15 @@ The remaining LTC-Accel parameters contribute marginally to acceleration efficie
 
 ### Stable Diffusion v2 and v3.5
 
+<div align="center">
+<img width="80%" alt="image" src="figures/sd2_and_sd35.png">
+</div>
+
 ### Video Model
 
-
+<div align="center">
+<img width="80%" alt="image" src="figures/video_quantitative.png">
+</div>
 ### Other Implementations and Plugins
 We sincerely thank the authors listed below who implemented LTC-Accel in plugins or other contexts.
 
