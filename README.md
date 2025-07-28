@@ -100,6 +100,8 @@ We use the Stable Diffusion v3.5 pipeline as an example, but feel free to custom
 * The `skip_x` flag determines whether LTC‑Accel is applied during sampling.
 * The `l` and `r` arguments define the step interval over which LTC‑Accel is active.
 
+The remaining LTC-Accel parameters contribute marginally to acceleration efficiency. See `step.py` for implementation details.
+
 ## Visualization
 
 
