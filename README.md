@@ -108,6 +108,10 @@ The remaining LTC-Accel parameters contribute marginally to acceleration efficie
 
 ## Visualization
 
+Images in the first and third column are the baselines and the images in the second and fourth column are accelerated by LTC-Accel.
+
+
+
 ## Quantitative Results
 
 ### Stable Diffusion v2 and v3.5
