@@ -104,16 +104,12 @@ The remaining LTC-Accel parameters contribute marginally to acceleration efficie
 
 ## Visualization
 
+## Quantitative Results
 
-### Visualization
-The accelerated sampling strategy implemented in this project has been tested on various datasets and models. Below are some images generated through the original and accelerated sampling:
-<div style="position: relative; display: inline-block;">
-  <img src="example.png" alt="Sampling Time Comparison" width="800">
-  <!-- 根据实际图片位置调整 top 和 left 的值 -->
-  </div>
-</div>
+### Stable Diffusion v2 and v3.5
 
-Specifically, the first column presents images generated from 8-step LTC-Accel accelerated from the 12-step original sampling process, while the second and the third column are generated from 8-step and 12-step original sampling process.
+### Video Model
+
 
 ### Other Implementations and Plugins
 We sincerely thank the authors listed below who implemented LTC-Accel in plugins or other contexts.
