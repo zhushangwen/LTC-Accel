@@ -133,6 +133,6 @@ We sincerely thank the authors listed below who implemented LTC-Accel in plugins
 
 - Diffusers: https://huggingface.co/docs/diffusers
 
-
+We're excited to collaborate—everyone is welcome to contribute. Contact us if you’d like to get involved.
 
 
