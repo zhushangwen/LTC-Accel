@@ -39,6 +39,10 @@ Before we dive into the details, we invite you to try our [Quickstart Colab Demo
 Designed as model-agnostic solution, it integrates seamlessly with diverse pipelines while achieving up to **10× speedup** when combined with distillation techniques.
 
 <div align="center">
+<img width="50%" alt="image" src="figures/ltc_plot.png">
+</div>
+
+<div align="center">
 <img width="50%" alt="image" src="figures/method_display.png">
 </div>
 
