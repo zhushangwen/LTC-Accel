@@ -44,6 +44,10 @@ Designed as model-agnostic solution, it integrates seamlessly with diverse pipel
 
 <div align="center">
 <img width="50%" alt="image" src="figures/method_display.png">
+<br>
+<em>
+  (A concise illustration of the LTC‑Accel procedure.)
+</em>
 </div>
 
 ## Quick Start
