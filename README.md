@@ -110,7 +110,9 @@ The remaining LTC-Accel parameters contribute marginally to acceleration efficie
 
 Images in the first and third column are the baselines and the images in the second and fourth column are accelerated by LTC-Accel.
 
-
+<div align="center">
+<img width="80%" alt="image" src="figures/visualization.png">
+</div>
 
 ## Quantitative Results
 
