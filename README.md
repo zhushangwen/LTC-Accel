@@ -86,6 +86,11 @@ if __name__ == "__main__":
     run_inference(device="cuda", model_id=model_id, inference_steps=40)
 ```
 
+We use the Stable Diffusion v3.5 pipeline as an example, but feel free to customize the `pipe` and `scheduler` as needed.
+* The `cal_wg` flag controls whether to compute `wg`, which requires **one additional full sampling pass** and is essential for LTC‑Accel to function.
+* The `skip_x` flag determines whether LTC‑Accel is applied during sampling.
+* The `l` and `r` arguments define the step interval over which LTC‑Accel is active.
+
 ### Introduction
 **LTC-Accel** is a **training-free acceleration framework** that enhances sampling efficiency in diffusion models by identifying and leveraging **Local Transition Coherence (LTC)**. Designed as model-agnostic solution, it integrates seamlessly with diverse pipelines while achieving up to **10× speedup** when combined with distillation techniques.
 
