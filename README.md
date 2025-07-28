@@ -41,8 +41,6 @@ Before we dive into the details, we invite you to try our [Quickstart Colab Demo
 
 ### Installation
 
-To use this project, clone the repository and install the required dependencies.
-
 ```bash
 pip install -r requirements.txt
 ```
