@@ -21,9 +21,9 @@
 <br>
 
 ### Why LTC-Accel  
-* 🚀 **Instant speed‑ups, zero retraining**: Achieve significant sampling acceleration without touching your model weights
-* 🔄 **Architecturally agnostic**: Seamlessly supports any base model and scheduler combination
-* ⚡ **True plug‑and‑play**: Drop it into your existing pipeline—no code rewrites, just faster results
+* 🚀 **Instant speed‑ups, zero retraining**: Achieve significant sampling acceleration without touching your model weights.
+* 🔄 **Architecturally agnostic**: Seamlessly supports any base model and scheduler combination.
+* ⚡ **True plug‑and‑play**: Drop it into your existing pipeline—no code rewrites, just faster results.
 
 ### Updates
 * **July 10, 2025**: 🧪 [Interactive Colab Demo](https://colab.research.google.com/drive/1h0SM3dp7oUzjBdahmwEcJn9RCq2gryD1) released - experience LTC-Accel in real-time directly from your browser!
@@ -108,7 +108,7 @@ The remaining LTC-Accel parameters contribute marginally to acceleration efficie
 
 ## Visualization
 
-Images in the first and third column are the baselines and the images in the second and fourth column are accelerated by LTC-Accel.
+Baseline images are shown in the first and third columns; the corresponding LTC‑Accel accelerated results appear in the second and fourth columns.
 
 <div align="center">
 <img width="80%" alt="image" src="figures/visualization.png">
