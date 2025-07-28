@@ -39,7 +39,7 @@ Before we dive into the details, we invite you to try our [Quickstart Colab Demo
 Designed as model-agnostic solution, it integrates seamlessly with diverse pipelines while achieving up to **10× speedup** when combined with distillation techniques.
 
 <div align="center">
-<img width="100%" alt="image" src="figures/ltc_plot.png">
+<img width="80%" alt="image" src="figures/ltc_plot.png">
 </div>
 
 <div align="center">
@@ -117,6 +117,7 @@ The remaining LTC-Accel parameters contribute marginally to acceleration efficie
 <div align="center">
 <img width="80%" alt="image" src="figures/video_quantitative.png">
 </div>
+
 ### Other Implementations and Plugins
 We sincerely thank the authors listed below who implemented LTC-Accel in plugins or other contexts.
 
