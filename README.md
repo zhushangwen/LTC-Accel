@@ -133,7 +133,7 @@ We sincerely thank the authors listed below who implemented LTC-Accel in plugins
 
 We're excited to collaborate—everyone is welcome to contribute. Contact us if you’d like to get involved.
 
-## Cite
+## Bibtex Citation
 ```
 @article{zhu2025accelerating,
   title={Accelerating Diffusion Sampling via Exploiting Local Transition Coherence},
