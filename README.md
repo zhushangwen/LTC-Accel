@@ -1,7 +1,5 @@
 # Accelerating Diffusion Sampling via Exploiting Local Transition Coherence
 
-(Building Now...)
-
 <p align="center">
   <a href="https://arxiv.org/abs/2503.09675">
     <img src="https://img.shields.io/badge/arXiv-2503.09675-b31b1b.svg">
@@ -128,11 +126,21 @@ Baseline images are shown in the first and third columns; the corresponding LTC�
 <img width="80%" alt="image" src="figures/video_quantitative.png">
 </div>
 
-### Other Implementations and Plugins
+## Other Implementations and Plugins
 We sincerely thank the authors listed below who implemented LTC-Accel in plugins or other contexts.
 
 - Diffusers: https://huggingface.co/docs/diffusers
 
 We're excited to collaborate—everyone is welcome to contribute. Contact us if you’d like to get involved.
+
+## Cite
+```
+@article{zhu2025accelerating,
+  title={Accelerating Diffusion Sampling via Exploiting Local Transition Coherence},
+  author={Zhu, Shangwen and Zhang, Han and Yang, Zhantao and Peng, Qianyu and Pu, Zhao and Wang, Huangji and Cheng, Fan},
+  journal={arXiv preprint arXiv:2503.09675},
+  year={2025}
+}
+```
 
 
